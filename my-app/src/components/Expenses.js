@@ -1,8 +1,8 @@
 import ExpenseItem from "./ExpensItem";
-
+import './Expenses.css'
 const Expenses = (props) => {
     return(
-        <div>
+        <div className="expenses">
             <h2>Let's get started!</h2>
       <ExpenseItem
         title={props.items[0].title}

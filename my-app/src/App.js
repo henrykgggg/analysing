@@ -1,8 +1,8 @@
-
 import Expenses from "./components/Expenses";
 const App = () => {
   const expenses = [
     {
+      id: "02",
       title: "car insurance",
       amount: 456,
       date: new Date(2022, 3, 1),
@@ -34,9 +34,9 @@ const App = () => {
   ];
   return (
     <div>
-  <Expenses items={expenses}/>
+      <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
