@@ -33,9 +33,16 @@ const App = () => {
       date: new Date(2022, 8, 1),
     },
   ];
+
+const NewExpenseHandler = (expensesLast) =>{
+console.log(expensesLast)
+}
+
+
+
   return (
     <div>
-       <NewExpense />
+       <NewExpense OnAddExpenses={NewExpenseHandler}/>
       <Expenses items={expenses} />
      
     </div>
